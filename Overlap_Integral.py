@@ -2,7 +2,7 @@ import numpy as np
 from itertools import product
 from dataclasses import dataclass
 
-class FCParallelOverlap:
+class Overlap_Integrals:
     """
     Franck–Condon overlaps in the parallel-mode limit (J = I, equal frequencies).
 
