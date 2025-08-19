@@ -27,7 +27,7 @@ class SCFRunner:
             self.build_mol()
         mf = dft.RKS(self.mol)
         mf.xc = 'cam-b3lyp'
-        mf.grids.level = 4
+        mf.grids.level = 3
         mf.grids.prune = None
         mf.conv_tol = 1e-10
         mf.kernel()
@@ -35,4 +35,3 @@ class SCFRunner:
             raise RuntimeError("RKS did not converge")
         self.mf = mf
         return mf
-
